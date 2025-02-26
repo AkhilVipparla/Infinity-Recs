@@ -17,7 +17,7 @@ const Hero = () => {
       <div className='container'>
         {/* Header Section */}
         <div className="flex flex-col items-center py-10">
-          <p className="text-blue2 font-bold text-4xl text-center">
+          <p className="text-blue2 dark:text-purple-200 font-bold text-4xl text-center">
             Infinity Recs: Your Personal Recommendation Assistant
           </p>
           <div className='py-4'>
@@ -34,9 +34,9 @@ const Hero = () => {
           <input
             type="text"
             placeholder="Search Categories..."
-            className="w-3/4 mb-6 h-10 border border-gray-300 rounded-lg p-2 shadow-md"
+            className="w-3/4 mb-6 h-10 border border-gray-300 rounded-lg p-2 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-700"
           />
-          <select className="w-60 h-10 border border-gray-300 rounded-lg p-2 shadow-md">
+          <select className="w-60 h-10 border border-gray-300 rounded-lg p-2 shadow-md focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-700">
             <option value="all">All Categories</option>
             {categories.map((category, index) => (
               <option key={index} value={category.toLowerCase().replace(/ & /g, '-').replace(/\s/g, '-')}>

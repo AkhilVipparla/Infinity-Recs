@@ -1,4 +1,6 @@
 import React from 'react';
+import DarkMode from './DarkMode';
+
 
 const NavLinks = [
     {
@@ -39,9 +41,10 @@ const Navbar = () => {
             </ul>
             
             {/* Login Button */}
-            <div className='ml-6 border-2 border-black px-3 py-1 rounded-md'>
-              <button>Login</button>
+            <div className='px-3 py-1'>
+              <DarkMode/>
             </div>
+            
           </div>
         </div>
       </div>

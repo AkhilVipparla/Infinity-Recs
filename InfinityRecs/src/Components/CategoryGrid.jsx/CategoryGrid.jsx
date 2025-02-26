@@ -25,7 +25,7 @@ const CategoryGrid = () => {
         {filteredCategories.map((category, index) => (
           <button 
             key={index} 
-            className="bg-white shadow-md rounded-lg p-8 w-full h-40 flex flex-col items-center justify-center text-lg font-semibold text-gray-800 hover:bg-gray-100 transition duration-300"
+            className="bg-white shadow-md rounded-lg p-8 w-full h-40 flex flex-col items-center justify-center text-lg font-semibold dark:bg-gray-800 dark:text-white text-gray-800 hover:bg-gray-100 transition duration-300"
           >
             <span className="text-4xl">{getEmoji(category)}</span>
             <span className="mt-3">{category}</span>
